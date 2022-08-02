@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+.profile-card {
+  width: 400px;
+  background-color: #ececec;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-card__header {
+  background: #202020;
+  padding: 3rem 3.5rem;
+}
+.profile-card__header__pic {
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  background: linear-gradient(130deg, #ffc700, #e4e4e4);
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: bgcolorChange 1s linear infinite;
+}
+
+@keyframes bgcolorChange {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+.profile-card__header__pic img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile-card__header > h2 {
+  margin: 12px;
+  color: #ffc700;
+}
+.profile-card__header > p {
+  color: #ececec;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+
+.profile-card__header__link-social > a {
+  display: inline-block;
+  color: #ececec;
+  margin: 0 1rem;
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  border: 2px solid #ffc700;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  color: #ffc700;
+  margin-top: 1.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #ffc700;
+  color: #202020;
+}
+.profile-card__footer {
+  display: flex;
+  align-items: center;
+  padding: 3rem 5px;
+}

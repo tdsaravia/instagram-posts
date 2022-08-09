@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Typing Animation Using JS</title>
+</head>
+<body>
+    <div class="iam">Hello! I'm</div>
+    <div class="text"></div>
+</body>
+<script>
+   var typing=new Typed(".text", {
+       strings: ["", "TCoder", "a Software Engineer", "a Front End Developer", "a Web Designer"],
+       typeSpeed: 100,
+       backSpeed: 40,
+       loop: true,
+   });
+</script>
+</html>

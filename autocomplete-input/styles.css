@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+}
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width:300px;
+  }
+  input {
+    border: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  input[type=text] {
+    background-color: transparent;
+    width: 100%;
+    border:1px solid #3f3f3f;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+  }
+  input[type=text]:focus {
+    border:1px solid #ffc700;
+    outline: none !important;
+  }
+  input[type=submit] {
+    background-color: #ffc700;
+    color: #000;
+    cursor: pointer;
+    margin-left:-3px;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s ease;
+  }
+  input[type=submit]:hover {
+    background-color: transparent;
+    color: #fff;
+    border:1px solid #ffc700;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #3f3f3f;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #272727; 
+    border-bottom: 1px solid #353535; 
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #ffc700; 
+    color:#000
+  }
+  
+  .autocomplete-active {
+    background-color: #ffc700 !important; 
+    color: #000; 
+  }

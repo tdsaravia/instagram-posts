@@ -28,25 +28,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
-.dark-mode {
-    background-color: #fff;
-    color: #202020;
-    transition: 0.2s ease;
-  }
-
-.container button{
-    padding: 10px 40px;
-    background-color: #ffc700;
-    cursor: pointer;
+.text::selection {
     color:#202020;
-    border:1px solid #ffc700;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    max-width: 170px;
+    background: #ffc700;
 }
-
-.container button:hover{
-    background-color: #ffc8008c;
-}
-

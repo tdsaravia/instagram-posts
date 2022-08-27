@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h3>Password Validation</h3>
+    <h3><span>Password</span> Validation</h3>
     
     <div class="container">
       <form>
         <label for="psw">Password</label>
-        <input type="password" id="psw" name="psw" 
+        <input type="text" id="psw" name="psw" 
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
         title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
         required/>
         <div id="message">
-            <h3>Password must contain the following:</h3>
+            <h3><span>Password</span> must contain the following:</h3>
             <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
             <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
             <p id="number" class="invalid">A <b>number</b></p>

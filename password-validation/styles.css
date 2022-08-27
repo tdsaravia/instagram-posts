@@ -24,6 +24,13 @@ body{
     border-radius:10px;
   }
 
+span {
+  text-decoration: line-through;
+  color: #ffc700;
+}
+label {
+  text-decoration: line-through;
+}
 input {
     width: 100%;
     padding: 12px;

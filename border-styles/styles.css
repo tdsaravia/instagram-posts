@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #202020;
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 500px;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+p {
+    padding: 10px;
+    border: #ffc700;
+    transition: 0.2s ease;
+}
+p:hover {
+    cursor: pointer;
+}
+p.dotted:hover {border-style: dotted;}
+p.dashed:hover {border-style: dashed;}
+p.solid:hover {border-style: solid;}
+p.double:hover {border-style: double;}
+p.groove:hover {border-style: groove;}
+p.ridge:hover {border-style: ridge;}
+p.inset:hover {border-style: inset;}
+p.outset:hover {border-style: outset;}
+p.none:hover {border-style: none;}
+p.hidden:hover {border-style: hidden;}
+p.mix:hover {border-style: dotted dashed solid double;}
